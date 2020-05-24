@@ -1,0 +1,12 @@
+<app-nav-bar></app-nav-bar>
+<div class="background fade-in">
+    <div class="arrows">
+        <div class="slide-arrow" (click)="left()"><i class="arrow left"></i></div>
+        <div class="slide-arrow "(click)="right()"><i class="arrow right"></i></div>
+    </div>
+    <div class="video-slider">
+        <div class="iframe-container">
+            <iframe class="video" [src]= 'getCurrentVid()' frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>

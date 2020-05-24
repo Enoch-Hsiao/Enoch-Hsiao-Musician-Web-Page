@@ -1,0 +1,51 @@
+body, html {
+    background: rgb(27, 27, 27);
+    overflow: hidden;
+}
+
+.bio-page {
+    background-image: url(https://i.imgur.com/sTUl4wU.png?3);
+    overflow: hidden;
+    width: 100vw;
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.bio-container {
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 0, 0); 
+    background: rgba(0, 0, 0, 0.9);
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.text {
+    color: white;
+    padding: 7.2px;
+    padding-top: 65px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+h3 span { 
+    font: 20px "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;  
+}
+
+ @media only screen and (max-width: 420px) {
+    .text {
+        color: white;
+        padding: 7.2px;
+        padding-top: 55px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    h3 span { 
+        font: 15px "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;  
+    }
+}
+

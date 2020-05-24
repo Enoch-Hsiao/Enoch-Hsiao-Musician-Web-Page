@@ -1,0 +1,96 @@
+body, html {
+    height: 100%;
+}
+
+.home-page {
+    background-image: url("https://i.imgur.com/dGuRKWe.jpg");
+
+    height: 100%;
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.title {
+    color: white;
+    letter-spacing: initial;
+    margin-left: 10px;
+    h1 {
+        font-size: 4em;
+        font-family: "Didot LT STD";
+    }
+}
+
+.button-div {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.explore {
+    display:inline-block;
+    position: relative;
+    padding:0.5em 2em;
+    border:0.16em solid rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    margin:0 0.3em 0.3em 0;
+    box-sizing: border-box;
+    text-decoration:none;
+    text-transform:uppercase;
+    font-family: "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+    font-weight:500;
+    font-size: 1em;
+    letter-spacing: 2px;
+    color:rgb(255, 255, 255);
+    text-align:center;
+    transition: all 0.15s;
+
+    left: 120px;
+    bottom: 175px;
+
+}
+
+.explore:hover {
+    color:rgb(70, 70, 70);
+    border-color:rgb(143, 128, 128);
+}
+
+.explore:active {
+    color:rgb(145, 136, 136);
+    background-color: rgb(31, 29, 29);
+    border-color:rgb(143, 128, 128);
+}
+
+.fade-in {
+    animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 3s;
+    -moz-animation: fadeIn ease 3s;
+    -o-animation: fadeIn ease 3s;
+    -ms-animation: fadeIn ease 3s;
+}
+
+@media only screen and (max-width: 420px) {
+    .explore {
+        padding:0.4em 1em;
+        border:0.16em solid rgb(255, 255, 255);
+        background-color: rgb(0, 0, 0);
+        margin:0 0.3em 0.3em 0;
+        font-weight:400;
+        font-size: 1em;
+        letter-spacing: 1px;
+
+        left: 90px;
+        bottom: 130px;
+    }
+    .title {
+        color: white;
+        h1 {
+            font-size: 3em;
+            font-family: "Didot LT STD";
+        }
+    }
+}
