@@ -1,6 +1,6 @@
 .background {
     height: 100%;
-    background-image: url("https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-image: url(../../photos/background.jpg);
     background-position: center;
     background-size: cover;
     overflow: hidden;
@@ -21,7 +21,7 @@
     justify-content: center;
 }
 .arrow {
-    border: solid white;
+    border: solid whitesmoke;
     border-width: 0 15px 15px 0;
     display: inline-block;
     padding: 25px;
