@@ -11,19 +11,24 @@ export class VideosComponent implements OnInit {
   links: string[]; 
   index = 0;
   currentVid: string;
-
+  reload: boolean;
   constructor(private sanitizer: DomSanitizer) { 
     
     this.links = [
-      "https://www.youtube.com/embed/5doKz_R97iU",
+      "https://www.youtube.com/embed/OquzfIyf9RU",
       "https://www.youtube.com/embed/gzmubSCAmAM",
       "https://www.youtube.com/embed/4LJnxjbLWYw",
       "https://www.youtube.com/embed/4Me_Voj14Q4"
     ]
     this.currentVid = this.links[this.index];
+    this.reload = true;
   }
 
   ngOnInit(): void {
+    if(this.reload) {
+      this.reload = false;
+      this.ngOnInit();
+    }
   }
 
   left() {
